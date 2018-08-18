@@ -52,10 +52,11 @@ struct Sala{
                  return false;
              }
          }
-
+/*
          cadeiras[indCadeira].id = cliente.id;
          cadeiras[indCadeira].fone = cliente.fone;
-         cadeiras[indCadeira].existe = true;
+         cadeiras[indCadeira].existe = true;*/
+         cadeiras[indCadeira] = cliente;
          cout<<"Done\n";
          return true;
 
