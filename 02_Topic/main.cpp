@@ -6,74 +6,72 @@ using namespace std;
 struct Passageiro{
     string id;
     string idade;
-    bool existe;
 
-    Passageiro(string id = "fulano", string idade = "0000", bool existe = true){
+    Passageiro(string id = "", string idade = ""){
         this->id = id;
         this->idade = idade;
-        this->existe = existe;
-    }
-
-    string toString(){
-        stringstream ss;
-        ss << this->id << ":" << this->idade;
-        return ss.str();
     }
 };
 
 struct Topic{
-    vector<Passageiro> cadeiras;
+    vector<Passageiro*> cadeiras;
     int pref;
 
-
-    Topic(int qtd = 0){
-        for(int i = 0; i < qtd; i++)
-            cadeiras.push_back(Passageiro("","",false));
+    Topic(int qtd = 0, int pf = 0): cadeiras(qtd,nullptr){
+        pref = pf;
     }
 
-private:
+    ~Topic(){
+        for(Passageiro *passageiro: cadeiras)
+            delete(passageiro);
+    }
 
-    bool meajuda(Passageiro pass){
-        for(Passageiro passageiro: cadeiras){
-            if(passageiro.id == pass.id)
+
+    bool meajuda(string nome){
+        for(Passageiro *passageiro: cadeiras){
+            if(passageiro == nullptr)
+                continue;
+            else if((passageiro->id == nome) && (passageiro != nullptr))
                 return false;
         }
         return true;
     }
 
-public:
 
-    bool embarcar(Passageiro  pass){
-        int qtd = cadeiras.size();
+    bool embarcar(string nome, string idade){
+        int qtd = (int) cadeiras.size();
         int disp = 0;
 
-        if(!meajuda(pass)){
-            cout << pass.id<<" Ja esta na topic\n";
+        if(!meajuda(nome)){
+            cout << nome<<" Ja esta na topic\n";
             return false;
         }
 
-        int aux = std::stoi(pass.idade);
+        int aux = std::stoi(idade);
+
         if(aux > 60){
             for(int i = 0; i < pref; i++){
-                if(!cadeiras[i].existe){
-                    cadeiras[i] = pass;
+                if(cadeiras[i] == nullptr){
+                    cadeiras[i] = new Passageiro(nome,idade);
+                    cout<<"Done\n";
                     return true;
                 }
             }
         }
 
         for(int i = 0 ;  i < qtd; i++){
-
-            if(i+1 > pref && !cadeiras[i].existe){
-                cadeiras[i] = pass;
+            if(i+1 > pref && cadeiras[i] == nullptr){
+                cadeiras[i] = new Passageiro(nome,idade);
+                cout<<"Done\n";
                 disp = 1;
                 return true;
             }
         }
         if(disp == 0){
             for(int i = 0; i < pref; i++){
-                if(!cadeiras[i].existe){
-                    cadeiras[i] = pass;
+                if(cadeiras[i] == nullptr){
+                    cadeiras[i] = new Passageiro(nome,idade);
+                    cout<<"Done\n";
                     return true;
                 }
             }
@@ -84,8 +82,12 @@ public:
 
     bool desembarcar(string nome){
         for(int i = 0; i < (int) cadeiras.size(); i++){
-            if(nome == cadeiras[i].id  && (cadeiras[i].existe)){
-                cadeiras[i]  = Passageiro("","",false);
+            if(cadeiras[i] == nullptr)
+                continue;
+            else if(nome == cadeiras[i]->id  && (cadeiras[i] != nullptr)){
+                delete(cadeiras[i]);
+                cadeiras[i] = nullptr;
+                cout<<"Done\n";
                 return true;
             }
         }
@@ -98,20 +100,23 @@ public:
         ss << "[ ";
         for(int j = 0; j < (int) cadeiras.size(); j++){
 
-            if(cadeiras[j].existe == false){
-                if(j < pref){
+            if(cadeiras[j] == nullptr){
+                if(j < pref)
                     ss << "@ ";
-                }else
+                else
                     ss << "= ";
             }
             else if(j < pref)
-                ss <<"@"<<cadeiras[j].toString() << " ";
+                ss <<"@"<<cadeiras[j]->id<<":"<<cadeiras[j]->idade<< " ";
             else if(j >= pref)
-                ss <<"#"<<cadeiras[j].toString() << " ";
+                ss <<"#"<<cadeiras[j]->id<<":"<<cadeiras[j]->idade << " ";
+
         }
         ss << "]";
         return ss.str();
     }
+
+
 };
 
 int main(){
@@ -128,12 +133,11 @@ int main(){
             int qtd;
             int prefe;
             cin >> qtd >> prefe;
-            vagao = Topic(qtd);
-            vagao.pref = prefe;
+            vagao = Topic(qtd,prefe);
         }else if(op == "in"){
             string nome, idade;
             cin >> nome >> idade;
-            vagao.embarcar(Passageiro(nome,idade,true));
+            vagao.embarcar(nome, idade);
         }else if(op == "out"){
             string nome;
             cin >> nome;
