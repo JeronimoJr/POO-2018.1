@@ -13,11 +13,11 @@
 # Quanto tempo levou pra fazer a atividade
   Umas duas horas.
 
-# ----------------------------------#
+# ---------------------------------------------------
 
 # 02_TOPIC
 
-# Com quem,o que você fez e como fez.
+- Com quem,o que você fez e como fez.
    Crie duas classes, a "Passageiro" e a "Topic". Na classe Passageiro criei os atributos
 id e idade e fiz um construtor.
 	Na classe Topic crie os atributos de quantidade de cadeiras preferencias e um vector
@@ -30,12 +30,12 @@ procuro o nome do passageiro no vector e o removo, respeitando o controle da mem
 	Por último, utilizei o método toString para impressão dos passageiros e da configuração
 das vagas na topic.
 
-# O que aprendeu e sabe fazer
+- O que aprendeu e sabe fazer
   Melhorei os meus conhecimentos sobre como funcionam os ponteiros e a importância de saber
 gerencia-los corretamente.
 
-# O que tem dificuldade ainda
+- O que tem dificuldade ainda
   Trabalhar com ponteiros, debugar.
-# Quanto tempo levou pra fazer a atividade
+- Quanto tempo levou pra fazer a atividade
   levei uns dois dias, demorei um pouco por está errando bastante na utilização
 dos ponteiros.
