@@ -18,6 +18,7 @@
 # 02_TOPIC
 
 - Com quem,o que você fez e como fez.
+
    Crie duas classes, a "Passageiro" e a "Topic". Na classe Passageiro criei os atributos
 id e idade e fiz um construtor.
 	Na classe Topic crie os atributos de quantidade de cadeiras preferencias e um vector
@@ -31,11 +32,15 @@ procuro o nome do passageiro no vector e o removo, respeitando o controle da mem
 das vagas na topic.
 
 - O que aprendeu e sabe fazer
-  Melhorei os meus conhecimentos sobre como funcionam os ponteiros e a importância de saber
+  
+	Melhorei os meus conhecimentos sobre como funcionam os ponteiros e a importância de saber
 gerencia-los corretamente.
 
 - O que tem dificuldade ainda
-  Trabalhar com ponteiros, debugar.
+  
+	Trabalhar com ponteiros, debugar.
+
 - Quanto tempo levou pra fazer a atividade
-  levei uns dois dias, demorei um pouco por está errando bastante na utilização
+  
+	levei uns dois dias, demorei um pouco por está errando bastante na utilização
 dos ponteiros.
