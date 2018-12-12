@@ -76,13 +76,13 @@ o funcionamento dos fluxos em C++ e como lidar com eles.
 	Não foi uma atividade que parei em casa e decidi faze-la toda, durante alguns dias
 fui melhorando o código, pouco a pouco, levando em conta isso, suponho que umas 4 horas foram necessárias para finalização do trabalho.
 
-#------------------------------------------------------------------
+# ------------------------------------------------------------------
 
 # 04_Conta_Bancaria
 
 - Com quem, o que você fez e como fez.
 
-Fiz sozinho, todos os métodos pedidos, para o histŕocio criei uma classe extra/auxiliar para guardar os processamentos
+Fiz sozinho, todos os métodos pedidos, para o histórico criei uma classe extra/auxiliar para guardar os processamentos
 de dados que são feitos.
 
 - O que tem dificuldade ainda
@@ -96,3 +96,45 @@ Noção de trabalho com históricos e o processo de interação com usuário
 - Quanto tempo levou pra fazer a atividade
 
 Duas horas
+
+# ---------------------------------------------------------------
+
+# 05_Agiota
+
+- Com quem, o que você fez e como fez.
+
+Fiz todo sozinho, fiz todos os métodos, o trabalho foi bem parecido com a conta bancaria,
+mudou poucas coisas.
+
+- O que tem dificuldade ainda
+
+Nesse trabalho não tive dificuldade, reforcei o aprendizado na criação do controller e
+na inserção e remoção dos dados.
+
+- O que aprendeu e sabe fazer
+
+Criar e manipular um controller, trabalhar com a lógica de transações
+
+- Quanto tempo levou pra fazer a atividade
+
+Duas horas
+
+# ---------------------------------------------------------------
+
+# 06_Tamagothi
+
+- Com quem, o que você fez e como fez.
+
+Fiz sozinho, fiz os métodos que faltaram ser terminados pelo professor.
+
+- O que tem dificuldade ainda
+
+Compreender a importância dos métodos set e get
+
+- O que aprendeu e sabe fazer
+
+Privar variáveis e utilizar métodos para acessar essas variáveis restritas
+
+- Quanto tempo levou pra fazer a atividade
+
+1 hora
