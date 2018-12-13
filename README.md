@@ -194,16 +194,25 @@ vai ter de usada de maneira que respeite os meus tipos de dados para não ocorre
 # 09_Contato_Com_Repositório
 
 - Com quem, o que você fez e como fez
+	
+	Fiz o trabalho individualmente, adaptei o trabalho contatos com o uso de repositório.
+Fiz todas os métodos "básicos" de um repositório como foi visto em sala, só não consegui fazer a
+ordenação dos dados via indíce.
 
 - O que tem dificuldade ainda
 
-Tenho certa dificuldade quando vou usar o template.
+	Tenho certa dificuldade quando vou usar o template.
 
 - O que aprendeu e sabe fazer
 
+	Aprendi como funcionar os repositórios e o quanto eles podem facilitar a programação e
+melhorar o desempenho de um projeto.
+
+	Reforcei o conteúdo de excessões.
+
 - Quanto tempo levou pra fazer a atividade
 
-1 dia
+	1 dia
 
 
 # 10_Trem
