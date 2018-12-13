@@ -13,7 +13,7 @@
 # Quanto tempo levou pra fazer a atividade
   Umas duas horas.
 
-# ---------------------------------------------------
+
 
 # 02_TOPIC
 
@@ -45,7 +45,7 @@ gerencia-los corretamente.
 	levei uns dois dias, demorei um pouco por está errando bastante na utilização
 dos ponteiros.
 
-# ---------------------------------------------------
+
 
 # 03_CONTATO
 
@@ -76,7 +76,7 @@ o funcionamento dos fluxos em C++ e como lidar com eles.
 	Não foi uma atividade que parei em casa e decidi faze-la toda, durante alguns dias
 fui melhorando o código, pouco a pouco, levando em conta isso, suponho que umas 4 horas foram necessárias para finalização do trabalho.
 
-# ------------------------------------------------------------------
+
 
 # 04_Conta_Bancaria
 
@@ -97,7 +97,7 @@ Noção de trabalho com históricos e o processo de interação com usuário
 
 Duas horas
 
-# ---------------------------------------------------------------
+
 
 # 05_Agiota
 
@@ -119,7 +119,7 @@ Criar e manipular um controller, trabalhar com a lógica de transações
 
 Duas horas
 
-# ---------------------------------------------------------------
+
 
 # 06_Tamagothi
 
@@ -138,3 +138,118 @@ Privar variáveis e utilizar métodos para acessar essas variáveis restritas
 - Quanto tempo levou pra fazer a atividade
 
 1 hora
+
+# 07_Anotações
+
+- Com quem, o que você fez e como fez
+
+Fiz o trablalho sozinho. Usei a aula sobre segredos para a produção deste trabalho, basicamente foi feito uma 
+adaptação, já que os trabalhos são bem parecidos. 
+
+- O que tem dificuldade ainda
+
+O uso de ponteiro para fazer o gerenciamento do login.
+
+- O que aprendeu e sabe fazer
+
+Aprendi com funciona internamente um sistema de login na prática, suas características e os cuidados que
+se deve tomar para ter um sistema consistente. Agora sei uma classe que gerencia outras classes.
+
+- Quanto tempo levou pra fazer a atividade
+
+Um final de semana inteiro
+
+# 08_RepositorioI
+
+- Com quem, o que você fez e como fez
+
+Fiz só. Fiz todos os métodos pedidos. Utilizei um map para guardar meus dados, "map<string, T>",
+fiz o mapeamento de string para "Qualquer coisa", implementei os métodos básicos, adicionar,remover, pegar todos os valores, que serão utilizados por minhas classe.
+
+- O que tem dificuldade ainda
+
+Tenho certa dificuldade quando vou usar o template.
+
+- O que aprendeu e sabe fazer
+
+Aprendi a usar o "ostream" para fazer a impressão dos meus elementos via repositório, assim
+como as excessões são recursos bem interresantes, de acordo com o que estou trabalhando ela
+vai ter de usada de maneira que respeite os meus tipos de dados para não ocorrer nenhum problema.
+
+- Quanto tempo levou pra fazer a atividade
+
+Uma tarde
+
+# 09_Contato_Com_Repositório
+
+- Com quem, o que você fez e como fez
+
+- O que tem dificuldade ainda
+
+Tenho certa dificuldade quando vou usar o template.
+
+- O que aprendeu e sabe fazer
+
+- Quanto tempo levou pra fazer a atividade
+
+1 dia
+
+
+# 10_Trem
+
+- Com quem, o que você fez e como fez
+
+Fiz o trabalho sozinho. Fiz o trabalho quase completo, não consegui fazer os vagões de "Qualquer coisa" para o trem.
+A primeira parte foi produzir os métodos embarcar e desembarcar, além de servir de porta de entrada/saída do trem, os 
+dois métodos serão utilizados para a administração do histórico de movimentação no trem.
+
+Contrui as funcionalidades de cadastro de passageiros e a movimentação de passageiros utilizando duas classes extras
+capazes de armazenar as movimentações quando o passageiro embarca e desembarca. As duas embarcar/desembarcar ajudam a guardar os valores de movimentação, para isso criei uma classe "Movimento" e outra classe "Cadastro", onde na classe "Trem" criei um vector<Movimento> e um map<String,Cadastro>, sempre que é feita uma inserção/remoção é dado um push_back no vector "Movimentos", ex.: movimentos.push_back(emb->getId() + " in"). No cadastro utilizei o map por 
+facilitar o manujeio das pessoas que serão inseridas, uma vez que no map não permite valores de
+chaves repetidas, ex.:  cadastros[emb->getId()] = (emb->getId()).
+Bem, esse foi a etapa mais interresante do trabalho, por isso me alongeui um pouco na explicação,
+tentei ser breve.
+
+- O que tem dificuldade ainda
+
+Dificuldade na abstração do uso das classes que herdam característica da classe pai e
+no uso de sobrecarga de operador
+
+- O que aprendeu e sabe fazer
+
+*Herança
+*Sobrecarga
+*Templates
+
+- Quanto tempo levou pra fazer a atividade
+
+6 horas.
+
+# 11_Salario
+
+- Com quem, o que você fez e como fez
+
+- O que tem dificuldade ainda
+
+Tenho certa dificuldade quando vou usar o template.
+
+- O que aprendeu e sabe fazer
+
+- Quanto tempo levou pra fazer a atividade
+
+1 dia
+
+# 12_Agenda
+
+- Com quem, o que você fez e como fez
+
+- O que tem dificuldade ainda
+
+Tenho certa dificuldade quando vou usar o template.
+
+- O que aprendeu e sabe fazer
+
+- Quanto tempo levou pra fazer a atividade
+
+1 dia
+
