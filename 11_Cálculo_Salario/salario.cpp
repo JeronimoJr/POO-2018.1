@@ -156,7 +156,8 @@ class Controller{
         string op;
         ss >> op;
         if(op == "help")
-            cout << "1. Mostrar\n2. Adc diaria\n3. adicionar funcionario\n"; 
+            cout << "1. Help\n2. AddProf\n3. show\n"
+                << "4. addSta\n5. addTer\n6. rm\n"; 
         else if(op == "addProf"){
             string chave, cl;
             ss >> chave >> cl;
@@ -184,7 +185,8 @@ class Controller{
             string nome;
             ss >> nome;
             funcionarios.remove(nome);
-        }
+        }else
+            cout << "Comando inválido" << endl;
     }
 
     void exec(){
